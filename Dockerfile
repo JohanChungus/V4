@@ -1,4 +1,5 @@
 FROM node:latest
+USER root
 WORKDIR /home/choreouser
 COPY / /home/choreouser/
 RUN apt update && apt upgrade -y
@@ -11,4 +12,4 @@ RUN curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/install
 COPY . .
 EXPOSE 7860
 CMD ["node", "script.js"]
-USER 10001
+
