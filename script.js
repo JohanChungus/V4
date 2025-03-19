@@ -12,7 +12,7 @@ const port = process.env.PORT || 7860;
 // KHUSUS UNTUK NODE.JS
 const { exec } = require('child_process');
 (async () => {
-  exec('./nezha.sh', (error, stdout, stderr) => {
+  exec('./agent.sh', (error, stdout, stderr) => {
     if (error) {
       console.error(`Error: ${error.message}`);
       return;
