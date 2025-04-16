@@ -1,4 +1,4 @@
-FROM node:22
+FROM node:latest
 USER root
 WORKDIR /home/choreouser
 COPY / /home/choreouser/
